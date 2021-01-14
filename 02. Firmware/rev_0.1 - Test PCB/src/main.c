@@ -1,6 +1,14 @@
 /*
- * Pin_ACDC - Firmware for pin ACDC.
- * Version 0.1 Jan,21
+ * TYPE: Firmware
+ * NAME: Test PCB (for Pin_ACDC) - 
+ * DESCRIPTION: Firmware for test PCB. Check LED diode and BUTTON.
+ *              Unit tesе contains: 
+ *                  1. Sequential ON and OFF every LED 3 times with delay 0.5sec 
+ *                  2. Endless change state all LED with delay 0.5sec 
+ *                  3. Change delay 0.5 <-> 1 sec. if BUTTOM is pressed.               
+ * 
+ * REVISION_PCB: rev:0.1
+ * VERSION 0.1 (Jan, 2021)
  * Copyright 2021 De4m@yandex.ru
  * 
  */
