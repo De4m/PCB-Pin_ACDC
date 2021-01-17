@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Download Firmware
+avrdude -p t13 -c avrisp2 -P usb -v -U flash:w:./.pio/build/ATTiny13A/firmware.hex:i
+
+# Fuses  (E:FF, H:FF, L:6A)
+#                 FD,   
+#avrdude -p t13 -c avrisp2 -P usb -v -U efuse:w:0xFF:m -U hfuse:w:0xFF:m -U lfuse:w:0x6A:m
+vrdude -p t13 -c avrisp2 -P usb -v  -U hfuse:w:0xFF:m -U lfuse:w:0x6A:m
+ 
+
